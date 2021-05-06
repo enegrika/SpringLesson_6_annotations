@@ -10,7 +10,7 @@
 <!--    tag for scan context and all component bean in our project-->
     <context:component-scan base-package="org.sergei.spring.lesson"/>
 
-<!--    tag for inject field values-->
+<!--    tag for inject field values -->
     <context:property-placeholder location="classpath:musicplayer.properties"/>
 
 </beans>
