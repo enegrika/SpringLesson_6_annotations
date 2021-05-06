@@ -7,7 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--    tag for scan context and all component bean in our project-->
     <context:component-scan base-package="org.sergei.spring.lesson"/>
+
+<!--    tag for inject field values-->
     <context:property-placeholder location="classpath:musicplayer.properties"/>
 
 </beans>
