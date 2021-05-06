@@ -9,10 +9,17 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationcontext.xml");
 
-        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer1 = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
 
-        musicPlayer.playMusic(MusicGenre.CLASSICAL);
-        musicPlayer.playMusic(MusicGenre.JAZZ);
+        musicPlayer1.playMusic(MusicGenre.CLASSICAL);
+        musicPlayer1.playMusic(MusicGenre.JAZZ);
+
+        ClassicalMusic classicalMusic1 = context.getBean("classicalMusic", ClassicalMusic.class);
+        ClassicalMusic classicalMusic2 = context.getBean("classicalMusic", ClassicalMusic.class);
+
+        System.out.println(classicalMusic1 == classicalMusic2);
+        System.out.println(musicPlayer1 == musicPlayer2);
 
         context.close();
     }
