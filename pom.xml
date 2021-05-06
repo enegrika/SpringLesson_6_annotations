@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>SpringLesson_4 Maven Webapp</name>
+  <name>SpringLesson Maven Webapp</name>
   <url>http://www.lessons.spring.sergei.com</url>
 
   <properties>

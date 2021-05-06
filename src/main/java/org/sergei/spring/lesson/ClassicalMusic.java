@@ -1,12 +1,16 @@
-package org.sergei.spring.lesson_04;
+package org.sergei.spring.lesson;
 
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Scope("prototype")
 public class ClassicalMusic implements Music {
 
 
@@ -34,11 +38,13 @@ public class ClassicalMusic implements Music {
 
 
     @Override
+    @PostConstruct
     public void doInit() {
         System.out.println("classical music bean initialized " + this);
     }
 
     @Override
+    @PreDestroy
     public void doDestroy() {
         System.out.println("classical music bean destroyed " + this);
 

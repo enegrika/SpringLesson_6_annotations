@@ -1,4 +1,4 @@
-import org.sergei.spring.lesson_04.*;
+import org.sergei.spring.lesson.*;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {

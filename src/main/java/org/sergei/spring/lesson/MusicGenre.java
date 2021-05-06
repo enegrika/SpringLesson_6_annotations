@@ -1,4 +1,4 @@
-package org.sergei.spring.lesson_04;
+package org.sergei.spring.lesson;
 
 public enum MusicGenre {
     CLASSICAL,
